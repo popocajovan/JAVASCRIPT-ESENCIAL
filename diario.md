@@ -1,2 +1,3 @@
 Día 1.- Aprendi la teoría de que es javascript, lo que puede hacer y como ejecutarlo tanto en node.js como en la consola de navegador, entendi la importancia de usar las variables correctas en los contextos necesarios, si es que usaremos el valor, y el porque es de vital importancia declarar con let que con var. 
 
+Día 2.- JavaScript se trata de un lenguaje que es dinámico, siendo así que sus variables pueden cambiar mientras esta en ejecución el programa. De igual manera, pude observar lo que fue la asignacion dinamica que posee el lenguaje. Asi como el uso y referencia que se toma en un objeto. El uso de los template literals me resulta muy conveniente, puesto que permite mostrar cadenas y numeros a la vez. 
