@@ -1,3 +1,4 @@
+//Ejercicio 1
 let compra = 600;
 let descuento = 0;
 descuento = (compra > 500) ? descuento = 20 : 
@@ -5,6 +6,7 @@ descuento = (compra > 500) ? descuento = 20 :
 precioFinal =compra- (compra*(1/ descuento));
 console.log(precioFinal)
 
+//Ejercicio 2
 let edad = 21;
 
 if(edad<18) {
@@ -16,6 +18,8 @@ else if (edad>=18 && edad<65){
     console.log("descuento senior");
 }
 
+//Ejercicio 3
+
 let peso_empaque= 0.5
 let precio= 0;
 
@@ -23,3 +27,4 @@ precio = (peso_empaque<1) ? precio= 50 :
 (peso_empaque < 5) ? precio = 100 : precio = 150;
 
 console.log(precio);
+
