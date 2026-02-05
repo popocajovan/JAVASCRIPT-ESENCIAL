@@ -15,7 +15,8 @@ De esta manera, si queremos diferenciarlos se utiliza la igualdad estricta. Que 
 # alert( 0 === false ); // false, because the types are different
 `Condicional if, else if, else:` Aprendi nuevas cosas que no sabia, en este caso mas que nada de los operadores terciarios. A que me refiero, no entiendo su uso del todo para sentencias largas. Es importante que cuando se utilicen indicar con parentesis la condicion para mayor legibilidad. De igual manera, realice algunos ejercicios de practica por que lo habia olvidado un poco jaja. 
 
-`Dia 4.-` Eh aprendido las bases de los loops en javascript, son tan interesantes el hecho de las declaraciones que tienen, siendo que puedes usar 
+`Dia 4.-`
+ Eh aprendido las bases de los loops en javascript, son tan interesantes el hecho de las declaraciones que tienen, siendo que puedes usar 
 # if (!value) break; // (*)
 Lo que ayuda a romper una condicional while, si es que queremos salir de ella. La diferencia que existe entre un do while y un while, es que en el do. El código se ejecuta por lo menos una vez. 
 Existe la palabra reservada `continue` siendo un poco menos pesado que break, y sirve de manera similar, pero sin forzar o detener el ciclo, es decir, puede llegar a saltar algunas iterantes, las fuerza a saltar. Por ultimo, en dado caso de que el usuario no quiera seguir ingresando datos, y no sea necesario cumplir estrictamente la condicional, podemos usar una condicional con un label. Que se veria de la siguiente manera. 
@@ -41,3 +42,23 @@ En resumen...
 while – La condición se comprueba antes de cada iteración. 
 do..while – La condición se comprueba después de cada iteración. 
 for (;;) – La condición se comprueba antes de cada iteración, hay configuraciones adicionales disponibles
+
+
+`Dia 5.- Funciones` Eh aprendido el uso de las funciones, si bien ya sabia de ello y como funcionaba, cambia un poco en cuanto a JavaScript. Lo más interesante fue las buenas prácticas que se me dió. En este caso tratar que las funciones realizen una tarea específica, no más. Esto debido a que, una funcion que realiza actividades diferentes es dificil de entender para la lectura. Así que divide, y entenderás en este caso. 
+
+Algunas cuestiones interesantes pero resumidas son : 
+# Que las variables que creemos de forma local en una funcion no pueden ser reconocidas de manera global. Es importante usar puras variables locales en las funciones (Buena práctica). Así como también, podemos asignar valores por default si es que no se coloca un valor en cuanto pasamos una función. Ejemplo: 
+# ejemplo(from, text= "Si no te pasan nada esto se escribira"){ 
+#      alert( from + ": " + text ); } 
+# ejemplo("mensaje")  // Mensaje: Si no te pasan nada esto se escribira.
+Por ultimo se hizo incapie en los nombres, aqui algunos ejemplos de nombres en funciones. 
+
+Examples of such names:
+
+`showMessage(..)     // shows a message`
+`getAge(..)          // returns the age (gets it somehow)`
+`calcSum(..)         // calculates a sum and returns the result`
+`createForm(..)      // creates a form (and usually returns it)`
+`checkPermission(..) // checks a permission, returns true/false`
+
+ 
