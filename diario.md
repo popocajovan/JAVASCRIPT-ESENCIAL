@@ -2,8 +2,8 @@ Día 1.- Aprendi la teoría de que es javascript, lo que puede hacer y como ejec
 
 Día 2.- JavaScript se trata de un lenguaje que es dinámico, siendo así que sus variables pueden cambiar mientras esta en ejecución el programa. De igual manera, pude observar lo que fue la asignacion dinamica que posee el lenguaje. Asi como el uso y referencia que se toma en un objeto. El uso de los template literals me resulta muy conveniente, puesto que permite mostrar cadenas y numeros a la vez. 
 
-Dia 3.- 
-`Comparaciones:`Todas las operaciones de comparacion devuelven un valor booleano. Si intentamos comparar dos valores que son diferentes, es decir, un string con un numero, el string sera automaticamente convertido a numero, lo cual es bastante interesante. Una cuestion interesante, es debido a que esto existe, 0 se considera como false en una comparacio. Por lo que lo siguiente es 
+Dia 3.- `Comparaciones:`
+Todas las operaciones de comparacion devuelven un valor booleano. Si intentamos comparar dos valores que son diferentes, es decir, un string con un numero, el string sera automaticamente convertido a numero, lo cual es bastante interesante. Una cuestion interesante, es debido a que esto existe, 0 se considera como false en una comparacio. Por lo que lo siguiente es 
 
 # alert( 0 == false ); // true
 
@@ -44,7 +44,8 @@ do..while – La condición se comprueba después de cada iteración.
 for (;;) – La condición se comprueba antes de cada iteración, hay configuraciones adicionales disponibles
 
 
-`Dia 5.- Funciones` Eh aprendido el uso de las funciones, si bien ya sabia de ello y como funcionaba, cambia un poco en cuanto a JavaScript. Lo más interesante fue las buenas prácticas que se me dió. En este caso tratar que las funciones realizen una tarea específica, no más. Esto debido a que, una funcion que realiza actividades diferentes es dificil de entender para la lectura. Así que divide, y entenderás en este caso. 
+`Dia 5.- Funciones` 
+Eh aprendido el uso de las funciones, si bien ya sabia de ello y como funcionaba, cambia un poco en cuanto a JavaScript. Lo más interesante fue las buenas prácticas que se me dió. En este caso tratar que las funciones realizen una tarea específica, no más. Esto debido a que, una funcion que realiza actividades diferentes es dificil de entender para la lectura. Así que divide, y entenderás en este caso. 
 
 Algunas cuestiones interesantes pero resumidas son : 
 # Que las variables que creemos de forma local en una funcion no pueden ser reconocidas de manera global. Es importante usar puras variables locales en las funciones (Buena práctica). Así como también, podemos asignar valores por default si es que no se coloca un valor en cuanto pasamos una función. Ejemplo: 
@@ -62,3 +63,19 @@ Examples of such names:
 `checkPermission(..) // checks a permission, returns true/false`
 
  
+`Dia 5.- Arreglos`
+Se trata de un concepto bastante fundamental en el lenguaje, puesto que con ello empezamos a la estructura de datos en el lenguaje. Siendo algunos principales puntos que se tocaron los siguientes: 
+
+    -Los arreglos son objetos, por lo que heredan y pueden poseer propiedades como si se tratase de un objeto. 
+    -NO es recomendable hacer que los arreglos hereden propiedades, debido a que el motor olvidaría o quitaria las optimizaciones que realiza sobre los arreglos, algunas maneras de usarlo incorrectamente son:
+
+# Agregar propiedades NO numericas como like arr.test = 5.
+# Hacer agujeros, como: agregar arr[0] y despues arr[1000] (Y nada entre ellos).`
+# Fill the array in the reverse order, like arr[1000], arr[999] and so on.
+    - El rendimiento es diferente cuando se usa usa un Shift/Unshift a cuando se usa un push/pop. Esto debido a que a la hora de ejecutar un shift(tomar un elemento del inicio) es necesario re indexar todos los valores del arreglo que se encuentran, es decir moverlos para la izquierda (al inicio), a su vez se calcula longitud, y calcular su index. Mas sin embargo pup/posh solamente agregan al final lo que son nuevos elementos sin modificar el arreglo. 
+    - Cuando usamos arreglos podemos usar los ciclos for of y for in. Pero aqui unos pequenios detalles: 
+            *En caso de usar for of, solo tendremos accesos a los valores dentro del arreglo nada mas, recomendable y rapido para arreglos
+            *En caso de usar for in, este si nos da acceso a los indices, ya que accede a traves de ello. Mas sin embargo no es muy recomendable para arreglos, esto debido a que al ser for in, itera sobre todas las propiedades, ya que existen objetos similares a arreglos en el navegador, y el for in al iterar como si fueran objetos nos mostrara propiedades extra, lo cual nos generara problemas a largo plazo. 
+    - La longitud de un arreglo no esta determinado por cuantos valores tiene, si no mas bien con el indice mas alto + 1.
+    -Si queremos comparar un arreglo con un valor, NO utilizar el metodo de comparacion ==. Sino mas bien, el item by item, es decir, un for of. 
+
